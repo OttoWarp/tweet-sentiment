@@ -5,7 +5,7 @@
     <artifactId>TweetSentiment</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
-    <name>A tweet sentiment serverless example.</name>
+    <name>tweet-sentiment</name>
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
