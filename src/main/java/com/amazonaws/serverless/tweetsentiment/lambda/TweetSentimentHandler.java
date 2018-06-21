@@ -25,7 +25,7 @@ public class TweetSentimentHandler implements RequestHandler<List<String>, Void>
     @Override
     public Void handleRequest(List<String> tweets, Context context) {
         tweetSentiment.publishSentimentMetrics(tweets);
-          log.info("Tweet Sentiment completed successfully!");
+  //        log.info("Tweet Sentiment completed successfully!");
         return null;
     }
 }
