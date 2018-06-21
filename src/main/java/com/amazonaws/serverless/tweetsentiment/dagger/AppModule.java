@@ -1,3 +1,4 @@
+
 package com.amazonaws.serverless.tweetsentiment.dagger;
 
 import javax.inject.Singleton;
@@ -19,6 +20,8 @@ public class AppModule {
     @Provides
     @Singleton
     public TweetSentiment provideTweetSentiment() {
-        return new TweetSentiment();
+        AmazonComprehend comprehend = AmazonComprehendClientBuilder.standard().build();
+        AmazonCloudWatch cloudWatch = AmazonCloudWatchClientBuilder.standard().build();
+        return new TweetSentiment(comprehend, cloudWatch);
     }
 }
