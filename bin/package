@@ -1,0 +1,3 @@
+#!/bin/sh
+
+sam package --profile=Tom --region=us-east-1 --template-file template.yaml --s3-bucket ottowarp-sam --output-template packaged.yaml
